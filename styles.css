@@ -1,0 +1,11 @@
+h1, h2, p {
+    margin: 0;
+}
+#mainPage {
+    height: 80vh;
+    background: url('/photo-1620302044865-d934e46372b7.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}

@@ -1,0 +1,10 @@
+h1, h2, p {
+  margin: 0;
+}
+
+#mainPage {
+  background: url("photo-1620302044865-d934e46372b7.06de4aaf.avif") center / cover no-repeat;
+  height: 80vh;
+}
+
+/*# sourceMappingURL=index.1303bb05.css.map */
