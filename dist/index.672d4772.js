@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
         edge: "left",
         draggable: true
     };
-    const sidenavInstance = M.Sidenav.init(sidenavElement, sidenavOptions);
+    // I kinda don't get why this works, Materialize.Sidenav.init comes from <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    // because it's loaded first I can use it in this script
+    const sidenavInstance = Materialize.Sidenav.init(sidenavElement, sidenavOptions);
     sidenavInstance.close();
 });
 
