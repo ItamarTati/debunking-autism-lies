@@ -9,5 +9,3 @@ document.addEventListener('DOMContentLoaded', function() {
   
     sidenavInstance.close();
 });
-
-console.log(Object.keys(window));
