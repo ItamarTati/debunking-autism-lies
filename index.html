@@ -1,69 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="styles.css"  media="screen,projection"/>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="styles.css"
+      media="screen,projection"
+    />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-
-
-    
-    <nav>
+    <nav class="red">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a>About</a></li>
-          <li><a>Articles</a></li>
-          <li><a>Where To Get Help</a></li>
+        <a href="#" class="brand-logo">Debunking Lies About Autism</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Where To Get Help</a></li>
         </ul>
       </div>
     </nav>
-    
-    <section id="mainpage">
-    <div class="background">
-    </div>
-    <div class="call2action">
-      <h1><span>Lies</span> About Autism</h1>
-      <h4>Read some of our first Articles</h4>
 
-    </div>
-  </section>
-<section>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">Where To Get Help</a></li>
+    </ul>
+
+    <section id="mainpage">
+      <div class="background"></div>
+      <div class="call2action">
+        <h1><span>Lies</span> About Autism</h1>
+        <h4>Read some of our first Articles</h4>
       </div>
-      <div class="footer-copyright">
+    </section>
+    <section>
+      <footer class="page-footer red">
         <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">
+                You can use rows and columns here to organize your footer
+                content.
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
-  </section>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+      type="text/javascript"
+      src="materialize/js/materialize.min.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
