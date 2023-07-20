@@ -1,6 +1,6 @@
 const template = document.createElement("template");
 template.innerHTML = `
-  <div class="row">
+<div>
     <div class="col s12 m7">
       <div class="card">
         <div class="card-image">
