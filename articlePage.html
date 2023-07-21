@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Article Page</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Article Page</h1>
+    <div id="articleContent">
+    </div>
+  </div>
+
+  <footer class="page-footer red">
+  </footer>
+
+  <script type="text/javascript">
+    console.log('hello')
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get('articleId');
+  </script>
+</body>
+</html>

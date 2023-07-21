@@ -41,11 +41,13 @@ function populateArticles(articles) {
     const description = descriptionNode.value;
     const title = article.fields.title;
     const imageLink = 'https:' + article.fields.image.fields.file.url;
+    const articleId = article.sys.id;
     const articleCardElement = document.createElement('article-card');
     articleCardElement.setAttribute('image-src', imageLink);
     articleCardElement.setAttribute('class', 'article');
     articleCardElement.setAttribute('title', title);
     articleCardElement.setAttribute('description', description);
+    articleCardElement.setAttribute('article-id', articleId)
     getArticlesElement.appendChild(articleCardElement);
   })
 }
