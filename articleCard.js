@@ -1,31 +1,34 @@
-const template = document.createElement("template");
-template.innerHTML = `
-<div>
-    <div class="col s12 m7">
-      <div class="card">
-        <div class="card-image">
-          <img alt="Card Image">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>`;
-
 class ArticleCard extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = template.innerHTML;
   }
 
   static get observedAttributes() {
-    return ["image-src"];
+    return ["image-src", "title", "description"];
+  }
+
+  connectedCallback() {
+    const imgSrc = this.getAttribute("image-src");
+    const title = this.getAttribute("title");
+    const description = this.getAttribute("description");
+
+    this.innerHTML = `
+      <a href="#">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="${imgSrc}" alt="Card Image">
+              <span class="card-title">${title}</span>
+            </div>
+            <div class="card-content">
+              <p>${description}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </a>`;
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -33,6 +36,16 @@ class ArticleCard extends HTMLElement {
       const imgElement = this.querySelector("img");
       if (imgElement) {
         imgElement.src = newValue;
+      }
+    } else if (name === "title") {
+      const titleElement = this.querySelector(".card-title");
+      if (titleElement) {
+        titleElement.textContent = newValue;
+      }
+    } else if (name === "description") {
+      const descriptionElement = this.querySelector(".card-content p");
+      if (descriptionElement) {
+        descriptionElement.textContent = newValue;
       }
     }
   }
