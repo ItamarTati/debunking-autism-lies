@@ -1,3 +1,4 @@
+// it is considered bad to leave api keys in public code that could be accessed by hackers
 const client = contentful.createClient({
   space: 's5cuf6g95aim',
   accessToken: 'gUfLgLYgVDFaV1rhEdswegMrqIdWtyo8we6iUreDyzg',
@@ -41,7 +42,6 @@ function populateArticles(articles) {
     const title = article.fields.title;
     const imageLink = 'https:' + article.fields.image.fields.file.url;
     const articleCardElement = document.createElement('article-card');
-    console.log(imageLink)
     articleCardElement.setAttribute('image-src', imageLink);
     articleCardElement.setAttribute('class', 'article');
     articleCardElement.setAttribute('title', title);
