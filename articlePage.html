@@ -2,8 +2,20 @@
 <html>
 <head>
   <title>Article Page</title>
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="materialize/css/materialize.min.css"
+  media="screen,projection"
+/>
 </head>
 <body>
+  <navbar-component></navbar-component>
+
   <div class="container">
     <h1>Article Page</h1>
     <div id="articleContent">
@@ -14,9 +26,10 @@
   </footer>
 
   <script type="text/javascript">
-    console.log('hello')
     const urlParams = new URLSearchParams(window.location.search);
     const articleId = urlParams.get('articleId');
   </script>
+    <script defer src="navbarComponent.js"></script>
+
 </body>
 </html>
