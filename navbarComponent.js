@@ -4,7 +4,7 @@ class NavbarComponent extends HTMLElement {
   }
     connectedCallback() {
       this.innerHTML = `
-        <nav class="red">
+        <nav class="blue">
           <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">Neurodiversity</a>
             <a href="#" class="sidenav-trigger" data-target="mobile-nav">
