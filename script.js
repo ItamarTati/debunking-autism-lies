@@ -1,24 +1,10 @@
 // it is considered bad to leave api keys in public code that could be accessed by hackers
+// contentful.createClient is a global variables
 const client = contentful.createClient({
   space: 's5cuf6g95aim',
   accessToken: 'gUfLgLYgVDFaV1rhEdswegMrqIdWtyo8we6iUreDyzg',
   environment: 'master'
 });
-
-// client.getEntries({
-//   content_type: 'blogPage', 
-// })
-//   .then((response) => {
-//     const articles = response.items;
-//     console.log(articles);
-//   })
-//   .catch((error) => {
-//     console.log('Error fetching articles:', error);
-//   });
-
-//   client.getEntry('something')
-//   .then((entry) => console.log(entry))
-//   .catch(console.error)
 
 function getArticles() {
   client.getEntries({
