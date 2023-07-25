@@ -90,10 +90,18 @@ function populatePage(article) {
 }
 
 function getArticle() {
+  document.querySelector("loader-component").style.display = "block";
+
   client
     .getEntry(articleId)
-    .then((article) => populatePage(article))
-    .catch(console.error);
+    .then((article) => {
+      populatePage(article);
+      document.querySelector("loader-component").style.display = "none";
+    })
+    .catch((error) => {
+      console.log("Error fetching articles:", error);
+      document.querySelector("loader-component").style.display = "none";
+    });
 }
 
 getArticle();
