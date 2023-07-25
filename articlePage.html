@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Article Page</title>
-  <link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-/>
-<link
-  type="text/css"
-  rel="stylesheet"
-  href="materialize/css/materialize.min.css"
-  media="screen,projection"
-/>
-</head>
-<body>
-  <navbar-component></navbar-component>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Article Page</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+  </head>
+  <body>
+    <section>
+      <navbar-component></navbar-component>
+    </section>
 
-  <div class="container">
-    <div id="articleContent">
-    </div>
-  </div>
+    <section>
+      <div class="container">
+        <div id="articleContent"></div>
+      </div>
+    </section>
 
-  <footer class="page-footer red">
-  </footer>
+    <section>
+      <footer-component></footer-component>
+    </section>
     <script
-    type="text/javascript"
-    src="materialize/js/materialize.min.js"
+      type="text/javascript"
+      src="materialize/js/materialize.min.js"
     ></script>
     <script defer src="navbarComponent.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <script type="text/javascript" src="articlePage.js"></script>
-
-</body>
+    <script defer src="footerComponent.js"></script>
+  </body>
 </html>
