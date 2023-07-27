@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Neurodiversity - Articles List</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link
+    type="text/css"
+    rel="stylesheet"
+    href="styles.css"
+    media="screen,projection"
+  />
+  </head>
+  <body>
+    <section>
+      <navbar-component></navbar-component>
+    </section>
+
+    <section style="min-height: 80vh;">
+      <div class="container">
+        <h1 style="text-align: center;">Articles List</h1>
+        <div id="articles">
+          <loader-component></loader-component>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer-component></footer-component>
+    </section>
+    <script
+      type="text/javascript"
+      src="materialize/js/materialize.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script defer src="navbarComponent.js"></script>
+    <script defer src="footerComponent.js"></script>
+    <script defer src="loaderComponent.js"></script>
+    <script defer src="articlesList.js"></script>
+    <script defer src="articleCard.js"></script>
+  </body>
+</html>

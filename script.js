@@ -12,6 +12,7 @@ function getArticles() {
   client
     .getEntries({
       content_type: "blogPage",
+      limit: 4
     })
     .then((response) => {
       const articles = response.items;
