@@ -87,6 +87,8 @@ function populatePage(article) {
         break;
     }
   }
+  articleContentElement.style.paddingBottom = '200px'
+
 }
 
 function getArticle() {
