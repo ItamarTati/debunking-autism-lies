@@ -5,26 +5,25 @@ class FooterComponent extends HTMLElement {
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
+                <h5 class="white-text">Embracing Neurodiversity</h5>
                 <p class="grey-text text-lighten-4">
-                  You can use rows and columns here to organize your footer
-                  content.
+                  Welcome to "Embracing Neurodiversity," a blog dedicated to exploring the power of differences and fostering inclusivity. We celebrate neurodiversity and embrace the uniqueness of every individual.
                 </p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
                   <li>
-                    <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                    <a class="grey-text text-lighten-3" href="#!">Contact Itamar Tati</a>
                   </li>
                   <li>
-                    <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                    <a class="grey-text text-lighten-3" href="#!">Contact Writer 1</a>
                   </li>
                   <li>
-                    <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                    <a class="grey-text text-lighten-3" href="#!">Discord</a>
                   </li>
                   <li>
-                    <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                    <a class="grey-text text-lighten-3" href="#!">Sign up for news</a>
                   </li>
                 </ul>
               </div>
@@ -32,8 +31,8 @@ class FooterComponent extends HTMLElement {
           </div>
           <div class="footer-copyright">
             <div class="container">
-              © ${new Date().getFullYear()} Copyright Text
-              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+              © ${new Date().getFullYear()} Embracing Neurodiversity Blog. All rights reserved.
+              <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
             </div>
           </div>
         </footer>
