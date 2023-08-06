@@ -6,7 +6,7 @@ class NavbarComponent extends HTMLElement {
       this.innerHTML = `
         <nav class="blue">
           <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Neurodiversity</a>
+            <a href="index.html" class="brand-logo">NeoVerse</a>
             <a href="#" class="sidenav-trigger" data-target="mobile-nav">
               <i class="material-icons">menu</i>
             </a>
