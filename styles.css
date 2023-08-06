@@ -39,9 +39,7 @@ h4 {
 }
 .background {
   width: 100%;
-  background: url("./photo-1620302044865-d934e46372b7.avif");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("./photo-1620302044865-d934e46372b7.avif") no-repeat center;
   background-size: cover;
   filter: blur(4px);
 }
@@ -52,10 +50,13 @@ h4 {
   border: 3px solid #f1f1f1;
   color: white;
   font-weight: bold;
-  padding: 20px;
   text-align: center;
   margin-bottom: 20px;
   padding: 1.5em;
+}
+
+.call2action p {
+  font-weight: normal;
 }
 
 #articles {

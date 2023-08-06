@@ -5,9 +5,9 @@ class FooterComponent extends HTMLElement {
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Embracing Neurodiversity</h5>
+                <h5 class="white-text">The NeoVerse Blog</h5>
                 <p class="grey-text text-lighten-4">
-                  Welcome to "Embracing Neurodiversity," a blog dedicated to exploring the power of differences and fostering inclusivity. We celebrate neurodiversity and embrace the uniqueness of every individual.
+                  Welcome to "The NeoVerse Blog" a blog dedicated to exploring the power of differences and fostering inclusivity. We celebrate neurodiversity and embrace the uniqueness of every individual.
                 </p>
               </div>
               <div class="col l4 offset-l2 s12">

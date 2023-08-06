@@ -8,6 +8,7 @@ const client = contentful.createClient({
 
 function populatePage(article) {
   const title = article.fields.title;
+  document.title = title
   const description = article.fields.description.content[0].content[0].value;
   const articleContentElement = document.getElementById("articleContent");
 
