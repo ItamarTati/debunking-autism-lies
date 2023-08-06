@@ -14,7 +14,7 @@ class NavbarComponent extends HTMLElement {
             <ul class="right hide-on-med-and-down">
               <li><a href="about.html">About</a></li>
               <li><a href="articlesList.html">Articles</a></li>
-              <li><a href="help.html">Where To Get Help?</a></li>
+<!--              <li><a href="help.html">Where To Get Help?</a></li>-->
             </ul>
           </div>
         </nav>
